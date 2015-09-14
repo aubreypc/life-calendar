@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<style>
+			body {
+				text-align: center;
+			}
+
+			ul {
+				list-style-type: none;
+			}
+
+			li {
+				display: inline;
+				position: relative;
+				line-height: 1.5;
+				padding: 2px;
+				margin: 2px;
+			}
+
+			li.past {
+				background: green;
+			}
+
+			li.present {
+				background: black;
+			}
+
+			li.future {
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Your life expectancy</h1>
+		<h3>Each bar represents one week.</h3>
+		<ul>
+			{% for week in past %}
+				<li class="past"></li>
+			{% endfor %}
+				<li class="present"></li>
+			{% for week in future %}
+				<li class="future"></li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>
