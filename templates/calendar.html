@@ -17,7 +17,7 @@
 			}
 
 			li.past {
-				background: green;
+				background: red;
 			}
 
 			li.present {
@@ -25,14 +25,15 @@
 			}
 
 			li.future {
-				background: red;
+				background: green;
 			}
 		</style>
 	</head>
 	<body>
 		<div id="title">
 			<h1>Your life expectancy</h1>
-			<h3>Each square represents one week.</h3>
+			<h4>Each red square represents one week you've lived.</h3>
+			<h4>Each green square represents one week you have left.</h4>
 		</div>
 		<ul>
 			{% for week in past %}
