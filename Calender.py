@@ -1,6 +1,6 @@
 import config
 
-class Calender(Object):
+class Calender(object):
 	def __init__(self, startYear, startMonth, startDay, expectancy=config.DEFAULT_LIFE_EXPECTANCY):
 		self.year = startYear
 		self.month = startMonth

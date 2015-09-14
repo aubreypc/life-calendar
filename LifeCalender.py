@@ -1,5 +1,5 @@
 from flask import Flask
-from calender import Calender
+from Calender import Calender
 
 app = Flask("LifeCalender")
 
