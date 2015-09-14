@@ -7,7 +7,7 @@ app = Flask("LifeCalender")
 def hello():
 	return "Hello World!"
 
-@app.route("/calender/<year>/<month>/<day>")
+@app.route("/calendar/<year>/<month>/<day>")
 def showCalendar(year, month, day):
 	cal = Calendar(year, month, day)
 	return cal.render()
