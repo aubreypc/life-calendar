@@ -1,2 +1,2 @@
-from LifeCalender import app
+from LifeCalendar import app
 app.run()
