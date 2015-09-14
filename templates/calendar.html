@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<style>
-			body {
+			#title {
 				text-align: center;
 			}
 
@@ -10,11 +10,10 @@
 			}
 
 			li {
-				display: inline;
+				display: inline-block;
 				position: relative;
-				line-height: 1.5;
-				padding: 2px;
-				margin: 2px;
+				padding: 5px;
+				margin: 1px;
 			}
 
 			li.past {
@@ -31,8 +30,10 @@
 		</style>
 	</head>
 	<body>
-		<h1>Your life expectancy</h1>
-		<h3>Each bar represents one week.</h3>
+		<div id="title">
+			<h1>Your life expectancy</h1>
+			<h3>Each square represents one week.</h3>
+		</div>
 		<ul>
 			{% for week in past %}
 				<li class="past"></li>
