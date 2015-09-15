@@ -32,15 +32,14 @@
 	<body>
 		<div id="title">
 			<h1>Your life expectancy</h1>
-			<h4>Each red square represents one week you've lived.</h3>
-			<h4>Each green square represents one week you have left.</h4>
+			<h4>You have lived about {{ percentage }}% of your life.</h4>
 		</div>
 		<ul>
-			{% for week in past %}
+			{% for week in range(past) %}
 				<li class="past"></li>
 			{% endfor %}
 				<li class="present"></li>
-			{% for week in future %}
+			{% for week in range(future) %}
 				<li class="future"></li>
 			{% endfor %}
 		</ul>
